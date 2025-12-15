@@ -14,17 +14,12 @@
 </head>
 
 <body id="top">
-    <header class="header header--principal">
-        <!-- El encabezado de la página-->
-        <h1>
-            <img src="./img/hammerlogo.png" alt="logo" width="64" height="64">
-            ¡Bienvenidos a mi página!
-        </h1>
-        <h2>
-            <em>
-                Este es el subtítulo principal (<strong>&lt;h2&gt;</strong>)
-            </em>
-        </h2>
+    <header>
+        <section class="header-principal">
+            <!-- El encabezado de la página-->
+            <div><img src="./img/hammerlogo.png" alt="logo" width="64" height="64"></div>
+            <div><h1>Ferretería Cacho</h1></div>
+        </section>
     </header>
 
     <nav>
@@ -41,20 +36,39 @@
 
     <main>
         <!-- El cuerpo de la página. Sólo contiene la información exclusiva para este documento HTML -->
-        <p>Esto sería el cuerpo del texto de la página.</p>
+        <section class="parrafo"><p>Bienvenidos a la página de Ferretería Cacho.</p></section>
 
-        <div id="vid1">
+        <div class="titulo">Video del día: </div>
+
+        <section class="videocontainer">
             <video src="./img/video/COMO USAR UN MARTILLO [Jyj-YBIa3N4].mp4" controls width="854" height="480">
                 <track src="./img/video/COMO USAR UN MARTILLO [Jyj-YBIa3N4].es.vtt" srclang="es" label="Español">
                 Su navegador no soporta esta función
             </video>
-        </div>
+        </section>
+
+        <div class="titulo">Conozca la opinión de nuestros clientes: </div>
+
+        <section class="reseñas">
+            <section class="card">
+                <div id="opinion-cuerpo"> Buen equipamiento a buenos precios. ¡Muy recomendables!</div>
+                <div id="opinion-firma"> Javier R.</div>
+            </section>
+            <section class="card">
+                <div id="opinion-cuerpo"> Se demoran demasiado con la entrega, una falta de respeto y profesionalismo, la verdad.</div>
+                <div id="opinion-firma"> Pablo A.</div>
+            </section>
+            <section class="card">
+                <div id="opinion-cuerpo"> Buena atención y herramientas, los recomiendo mucho.</div>
+                <div id="opinion-firma"> Silvina B.</div>
+            </section>
+        </section>
 
     </main>
 
     <footer>
         <!-- Este es el pie de página -->
-        <p>&copy; Pablo Araya, 2025</p>
+        <p>&copy; Pablo Araya, 2025. Todos los derechos reservados.</p>
     </footer>
 </body>
 

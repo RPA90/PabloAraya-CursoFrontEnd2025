@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
     <title>Contacto</title>
 </head>
+
 <body id="top">
     <header class="header header--contacto">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./acercade.html">Acerca de...</a></li>
-                <li><a href="#top">Contacto</a></li>
-            </ul>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./acercade.html">Acerca de...</a></li>
+            <li><a href="#top">Contacto</a></li>
+        </ul>
     </header>
     <main>
         <h1>SITIO EN CONSTRUCCIÓN</h1>
-        <form action="https://formspree.io/f/xrbanvpw" method="POST" autocomplete="off" id="CONTACTO">
-            
-            <div>
-            <label for="NOMBRE">Nombre</label>
-            <input name="Nombre" type="text" id="NOMBRE" maxlength="48" placeholder="Juan Pérez" required>
-            </div>
+        <section class="formulario">
+            <form action="https://formspree.io/f/xrbanvpw" method="POST" autocomplete="off">
 
-            <div>
-            <label for="EMAIL">E-Mail</label>
-            <input name="E-Mail" type="email" id="EMAIL" placeholder="nombre@dominio.com" required>
-            </div>
+                <div>
+                    <label for="NOMBRE">Nombre</label>
+                    <input name="Nombre" type="text" class="form-item" maxlength="48" placeholder="Juan Pérez" required>
+                </div>
 
-            <div>
-            <label for="MENSAJE">Mensaje</label>
-            <textarea name="Mensaje" id="MENSAJE" maxlength="255" placeholder="Largo máximo: 255 caracteres"></textarea>
-            </div>
+                <div>
+                    <label for="EMAIL">E-Mail</label>
+                    <input name="E-Mail" type="email" class="form-item" placeholder="nombre@dominio.com" required>
+                </div>
 
-            <input type="submit">
+                <div>
+                    <label for="MENSAJE">Mensaje</label>
+                    <textarea name="Mensaje" class="form-item" maxlength="255"
+                        placeholder="Largo máximo: 255 caracteres"></textarea>
+                </div>
 
-        </form>
+                <input type="submit">
 
-        <div></div>
-        <div></div>
+            </form>
+        </section>
+
         <a href="./index.html">Volver al Inicio</a>
     </main>
 </body>
+
 </html>
